@@ -34,13 +34,13 @@ notify_user() {
 # Increase brightness
 inc_backlight() {
 #	xbacklight -inc 5 && get_icon && notify_user
-	sudo brillo -A 5 && get_icon && notify_user
+	brillo -A 5 && get_icon && notify_user
 }
 
 # Decrease brightness
 dec_backlight() {
 #	xbacklight -dec 5 && get_icon && notify_user
-	sudo brillo -U 5 && get_icon && notify_user
+	brillo -U 5 && get_icon && notify_user
 }
 
 # Execute accordingly
